@@ -48,6 +48,9 @@ class AGraphicsGameEngineCharacter : public ACharacter
 public:
 	AGraphicsGameEngineCharacter();
 
+	UPROPERTY(EditAnywhere)
+		bool isTeleporting;
+
 protected:
 	/** Called for movement input */
 	void Move(const FInputActionValue& Value);
